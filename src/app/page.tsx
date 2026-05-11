@@ -88,9 +88,9 @@ export default function Home() {
       prev.map((s) =>
         s.id === sticker.id
           ? {
-              ...s,
-              owned: !s.owned
-            }
+            ...s,
+            owned: !s.owned
+          }
           : s
       )
     )
@@ -116,9 +116,9 @@ export default function Home() {
       prev.map((s) =>
         s.id === sticker.id
           ? {
-              ...s,
-              duplicates: value
-            }
+            ...s,
+            duplicates: value
+          }
           : s
       )
     )
@@ -169,7 +169,7 @@ export default function Home() {
     > = {}
 
     secoes.forEach((secao) => {
-      groups[secao.n] = []
+      groups[secao] = []
     })
 
     filtered.forEach((sticker) => {
@@ -200,26 +200,24 @@ export default function Home() {
 
   const percent = stickers.length
     ? (
-        (ownedCount /
-          stickers.length) *
-        100
-      ).toFixed(1)
+      (ownedCount /
+        stickers.length) *
+      100
+    ).toFixed(1)
     : '0'
 
   return (
     <main
-      className={`min-h-screen transition-all duration-300 ${
-        theme === 'dark'
+      className={`min-h-screen transition-all duration-300 ${theme === 'dark'
           ? 'bg-zinc-950 text-white'
           : 'bg-zinc-100 text-black'
-      }`}
+        }`}
     >
       <header
-        className={`sticky top-0 z-50 backdrop-blur border-b ${
-          theme === 'dark'
+        className={`sticky top-0 z-50 backdrop-blur border-b ${theme === 'dark'
             ? 'bg-zinc-950/90 border-zinc-800'
             : 'bg-white/90 border-zinc-300'
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto p-4">
           <div className="flex items-center justify-between gap-4">
@@ -232,11 +230,10 @@ export default function Home() {
                       : 'dark'
                   )
                 }
-                className={`px-4 py-2 rounded-2xl font-bold transition-all mb-3 ${
-                  theme === 'dark'
+                className={`px-4 py-2 rounded-2xl font-bold transition-all mb-3 ${theme === 'dark'
                     ? 'bg-zinc-800'
                     : 'bg-white border border-zinc-300'
-                }`}
+                  }`}
               >
                 {theme === 'dark'
                   ? '☀️ Claro'
@@ -277,11 +274,10 @@ export default function Home() {
                 e.target.value
               )
             }
-            className={`w-full mt-4 p-4 rounded-2xl border outline-none ${
-              theme === 'dark'
+            className={`w-full mt-4 p-4 rounded-2xl border outline-none ${theme === 'dark'
                 ? 'bg-zinc-900 border-zinc-800'
                 : 'bg-white border-zinc-300'
-            }`}
+              }`}
           />
 
           <div className="flex gap-2 mt-4 overflow-x-auto pb-1">
@@ -388,11 +384,10 @@ export default function Home() {
                   className="mb-10"
                 >
                   <div
-                    className={`sticky top-[220px] z-40 backdrop-blur py-3 mb-4 border-b ${
-                      theme === 'dark'
+                    className={`sticky top-[220px] z-40 backdrop-blur py-3 mb-4 border-b ${theme === 'dark'
                         ? 'bg-zinc-950/95 border-zinc-800'
                         : 'bg-zinc-100/95 border-zinc-300'
-                    }`}
+                      }`}
                   >
                     <div className="flex items-center justify-between">
                       <div>
@@ -443,18 +438,17 @@ export default function Home() {
                             transition-all duration-200 ease-out
                             hover:scale-[1.02]
                             active:scale-[0.98]
-                            ${
-                              sticker.owned
-                                ? `
+                            ${sticker.owned
+                              ? `
                                     bg-emerald-500/20
                                     border-emerald-500
                                     shadow-md
                                     shadow-emerald-500/20
                                   `
-                                : theme ===
-                                  'dark'
-                                  ? 'bg-zinc-900 border-zinc-800'
-                                  : 'bg-white border-zinc-300 shadow-sm'
+                              : theme ===
+                                'dark'
+                                ? 'bg-zinc-900 border-zinc-800'
+                                : 'bg-white border-zinc-300 shadow-sm'
                             }
                           `}
                         >
@@ -495,19 +489,18 @@ export default function Home() {
                               font-bold
                               transition-all duration-200 ease-out
                               active:scale-95
-                              ${
-                                sticker.owned
-                                  ? `
+                              ${sticker.owned
+                                ? `
                                       bg-emerald-500
                                       text-black
                                     `
-                                  : theme ===
-                                    'dark'
-                                    ? `
+                                : theme ===
+                                  'dark'
+                                  ? `
                                         bg-zinc-800
                                         hover:bg-zinc-700
                                       `
-                                    : `
+                                  : `
                                         bg-zinc-200
                                         hover:bg-zinc-300
                                       `
@@ -538,12 +531,11 @@ export default function Home() {
                               </button>
 
                               <div
-                                className={`w-8 h-8 rounded-lg flex items-center justify-center font-black text-sm ${
-                                  theme ===
-                                  'dark'
+                                className={`w-8 h-8 rounded-lg flex items-center justify-center font-black text-sm ${theme ===
+                                    'dark'
                                     ? 'bg-zinc-800'
                                     : 'bg-zinc-200'
-                                }`}
+                                  }`}
                               >
                                 {
                                   sticker.duplicates
@@ -590,11 +582,10 @@ function FilterButton({
   return (
     <button
       onClick={onClick}
-      className={`px-4 py-2 rounded-2xl whitespace-nowrap font-bold transition-all ${
-        active
+      className={`px-4 py-2 rounded-2xl whitespace-nowrap font-bold transition-all ${active
           ? 'bg-emerald-500 text-black'
           : 'bg-zinc-800 hover:bg-zinc-700'
-      }`}
+        }`}
     >
       {children}
     </button>
@@ -610,7 +601,7 @@ function copyMissing(
 
   navigator.clipboard.writeText(
     'FALTANTES 2026:\n\n' +
-      missing.join(', ')
+    missing.join(', ')
   )
 
   alert('Faltantes copiadas!')
@@ -630,7 +621,7 @@ function copyDuplicates(
 
   navigator.clipboard.writeText(
     'REPETIDAS 2026:\n\n' +
-      duplicates.join(', ')
+    duplicates.join(', ')
   )
 
   alert('Repetidas copiadas!')
