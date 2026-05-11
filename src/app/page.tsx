@@ -172,16 +172,42 @@ export default function Home() {
       groups[secao] = []
     })
 
+    const orderMap = new Map()
+
+    let index = 0
+
+    secoes.forEach((secao: any) => {
+      if (secao.ids) {
+        secao.ids.forEach((id: string) => {
+          orderMap.set(id, index++)
+        })
+      }
+
+      if (secao.p && secao.q) {
+        for (let i = 1; i <= secao.q; i++) {
+          orderMap.set(
+            `${secao.p}${i}`,
+            index++
+          )
+        }
+      }
+    })
+
     filtered.forEach((sticker) => {
-      if (
-        !groups[sticker.country]
-      ) {
+      if (!groups[sticker.country]) {
         groups[sticker.country] = []
       }
 
-      groups[sticker.country].push(
-        sticker
-      )
+      groups[sticker.country].push(sticker)
+    })
+
+    Object.keys(groups).forEach((key) => {
+      groups[key].sort((a, b) => {
+        return (
+          (orderMap.get(a.code) ?? 99999) -
+          (orderMap.get(b.code) ?? 99999)
+        )
+      })
     })
 
     return groups
@@ -209,14 +235,14 @@ export default function Home() {
   return (
     <main
       className={`min-h-screen transition-all duration-300 ${theme === 'dark'
-          ? 'bg-zinc-950 text-white'
-          : 'bg-zinc-100 text-black'
+        ? 'bg-zinc-950 text-white'
+        : 'bg-zinc-100 text-black'
         }`}
     >
       <header
         className={`sticky top-0 z-50 backdrop-blur border-b ${theme === 'dark'
-            ? 'bg-zinc-950/90 border-zinc-800'
-            : 'bg-white/90 border-zinc-300'
+          ? 'bg-zinc-950/90 border-zinc-800'
+          : 'bg-white/90 border-zinc-300'
           }`}
       >
         <div className="max-w-7xl mx-auto p-4">
@@ -231,8 +257,8 @@ export default function Home() {
                   )
                 }
                 className={`px-4 py-2 rounded-2xl font-bold transition-all mb-3 ${theme === 'dark'
-                    ? 'bg-zinc-800'
-                    : 'bg-white border border-zinc-300'
+                  ? 'bg-zinc-800'
+                  : 'bg-white border border-zinc-300'
                   }`}
               >
                 {theme === 'dark'
@@ -275,8 +301,8 @@ export default function Home() {
               )
             }
             className={`w-full mt-4 p-4 rounded-2xl border outline-none ${theme === 'dark'
-                ? 'bg-zinc-900 border-zinc-800'
-                : 'bg-white border-zinc-300'
+              ? 'bg-zinc-900 border-zinc-800'
+              : 'bg-white border-zinc-300'
               }`}
           />
 
@@ -385,8 +411,8 @@ export default function Home() {
                 >
                   <div
                     className={`sticky top-[220px] z-40 backdrop-blur py-3 mb-4 border-b ${theme === 'dark'
-                        ? 'bg-zinc-950/95 border-zinc-800'
-                        : 'bg-zinc-100/95 border-zinc-300'
+                      ? 'bg-zinc-950/95 border-zinc-800'
+                      : 'bg-zinc-100/95 border-zinc-300'
                       }`}
                   >
                     <div className="flex items-center justify-between">
@@ -532,9 +558,9 @@ export default function Home() {
 
                               <div
                                 className={`w-8 h-8 rounded-lg flex items-center justify-center font-black text-sm ${theme ===
-                                    'dark'
-                                    ? 'bg-zinc-800'
-                                    : 'bg-zinc-200'
+                                  'dark'
+                                  ? 'bg-zinc-800'
+                                  : 'bg-zinc-200'
                                   }`}
                               >
                                 {
@@ -583,8 +609,8 @@ function FilterButton({
     <button
       onClick={onClick}
       className={`px-4 py-2 rounded-2xl whitespace-nowrap font-bold transition-all ${active
-          ? 'bg-emerald-500 text-black'
-          : 'bg-zinc-800 hover:bg-zinc-700'
+        ? 'bg-emerald-500 text-black'
+        : 'bg-zinc-800 hover:bg-zinc-700'
         }`}
     >
       {children}
@@ -595,13 +621,40 @@ function FilterButton({
 function copyMissing(
   stickers: Sticker[]
 ) {
+  const orderMap = new Map()
+
+  let index = 0
+
+  secoes.forEach((secao: any) => {
+    if (secao.ids) {
+      secao.ids.forEach((id: string) => {
+        orderMap.set(id, index++)
+      })
+    }
+
+    if (secao.p && secao.q) {
+      for (let i = 1; i <= secao.q; i++) {
+        orderMap.set(
+          `${secao.p}${i}`,
+          index++
+        )
+      }
+    }
+  })
+
   const missing = stickers
     .filter((s) => !s.owned)
+    .sort((a, b) => {
+      return (
+        (orderMap.get(a.code) ?? 99999) -
+        (orderMap.get(b.code) ?? 99999)
+      )
+    })
     .map((s) => s.code)
 
   navigator.clipboard.writeText(
     'FALTANTES 2026:\n\n' +
-    missing.join(', ')
+      missing.join(', ')
   )
 
   alert('Faltantes copiadas!')
