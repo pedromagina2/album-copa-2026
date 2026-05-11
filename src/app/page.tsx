@@ -165,33 +165,82 @@ export default function Home() {
 
     let index = 0
 
-    secoes.forEach((secao: any) => {
-      groups[country] = []
+    const grouped = useMemo(() => {
+      const groups: Record<
+        string,
+        Sticker[]
+      > = {}
 
-      if (secao.ids) {
-        secao.ids.forEach(
-          (id: string) => {
+      const orderMap = new Map<
+        string,
+        number
+      >()
+
+      let index = 0
+
+      secoes.forEach((secao: any) => {
+
+        // cria o grupo da seção
+        if (typeof secao === 'string') {
+          groups[secao] = []
+        }
+
+        // ordem personalizada
+        if (secao.ids) {
+          secao.ids.forEach(
+            (id: string) => {
+              orderMap.set(
+                id,
+                index++
+              )
+            }
+          )
+        }
+
+        // ordem automática
+        if (secao.p && secao.q) {
+          for (
+            let i = 1;
+            i <= secao.q;
+            i++
+          ) {
             orderMap.set(
-              id,
+              `${secao.p}${i}`,
               index++
             )
           }
-        )
-      }
+        }
+      })
 
-      if (secao.p && secao.q) {
-        for (
-          let i = 1;
-          i <= secao.q;
-          i++
-        ) {
-          orderMap.set(
-            `${secao.p}${i}`,
-            index++
+      const sorted = [...filtered].sort(
+        (a, b) => {
+          return (
+            (orderMap.get(
+              a.code
+            ) ?? 99999) -
+            (orderMap.get(
+              b.code
+            ) ?? 99999)
           )
         }
-      }
-    })
+      )
+
+      sorted.forEach((sticker) => {
+        if (
+          !groups[sticker.country]
+        ) {
+          groups[
+            sticker.country
+          ] = []
+        }
+
+        groups[
+          sticker.country
+        ].push(sticker)
+      })
+
+      return groups
+    }, [filtered])
 
     const sorted = [...filtered].sort(
       (a, b) => {
