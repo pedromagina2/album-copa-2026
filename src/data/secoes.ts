@@ -53,5 +53,4 @@ export const secoes = [
 
   "História",
   "Coca",
-  "Extras"
 ]
