@@ -1,0 +1,7994 @@
+
+insert into stickers (
+  code,
+  country,
+  owned,
+  duplicates,
+  category
+)
+values
+
+(
+  '00',
+  'Somos 26',
+  false,
+  0,
+  'Somos 26'
+)
+,
+(
+  'FWC1',
+  'Sedes',
+  false,
+  0,
+  'Sedes'
+)
+,
+(
+  'FWC2',
+  'Sedes',
+  false,
+  0,
+  'Sedes'
+)
+,
+(
+  'FWC3',
+  'Sedes',
+  false,
+  0,
+  'Sedes'
+)
+,
+(
+  'FWC4',
+  'Sedes',
+  false,
+  0,
+  'Sedes'
+)
+,
+(
+  'FWC5',
+  'Sedes',
+  false,
+  0,
+  'Sedes'
+)
+,
+(
+  'FWC6',
+  'Sedes',
+  false,
+  0,
+  'Sedes'
+)
+,
+(
+  'FWC7',
+  'Sedes',
+  false,
+  0,
+  'Sedes'
+)
+,
+(
+  'FWC8',
+  'Sedes',
+  false,
+  0,
+  'Sedes'
+)
+,
+(
+  'MEX1',
+  'México',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MEX2',
+  'México',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MEX3',
+  'México',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MEX4',
+  'México',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MEX5',
+  'México',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MEX6',
+  'México',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MEX7',
+  'México',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MEX8',
+  'México',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MEX9',
+  'México',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MEX10',
+  'México',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MEX11',
+  'México',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MEX12',
+  'México',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MEX13',
+  'México',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MEX14',
+  'México',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MEX15',
+  'México',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MEX16',
+  'México',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MEX17',
+  'México',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MEX18',
+  'México',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MEX19',
+  'México',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MEX20',
+  'México',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'RSA1',
+  'África do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'RSA2',
+  'África do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'RSA3',
+  'África do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'RSA4',
+  'África do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'RSA5',
+  'África do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'RSA6',
+  'África do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'RSA7',
+  'África do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'RSA8',
+  'África do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'RSA9',
+  'África do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'RSA10',
+  'África do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'RSA11',
+  'África do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'RSA12',
+  'África do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'RSA13',
+  'África do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'RSA14',
+  'África do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'RSA15',
+  'África do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'RSA16',
+  'África do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'RSA17',
+  'África do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'RSA18',
+  'África do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'RSA19',
+  'África do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'RSA20',
+  'África do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KOR1',
+  'Coreia do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KOR2',
+  'Coreia do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KOR3',
+  'Coreia do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KOR4',
+  'Coreia do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KOR5',
+  'Coreia do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KOR6',
+  'Coreia do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KOR7',
+  'Coreia do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KOR8',
+  'Coreia do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KOR9',
+  'Coreia do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KOR10',
+  'Coreia do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KOR11',
+  'Coreia do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KOR12',
+  'Coreia do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KOR13',
+  'Coreia do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KOR14',
+  'Coreia do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KOR15',
+  'Coreia do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KOR16',
+  'Coreia do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KOR17',
+  'Coreia do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KOR18',
+  'Coreia do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KOR19',
+  'Coreia do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KOR20',
+  'Coreia do Sul',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CZE1',
+  'Rep. Tcheca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CZE2',
+  'Rep. Tcheca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CZE3',
+  'Rep. Tcheca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CZE4',
+  'Rep. Tcheca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CZE5',
+  'Rep. Tcheca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CZE6',
+  'Rep. Tcheca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CZE7',
+  'Rep. Tcheca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CZE8',
+  'Rep. Tcheca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CZE9',
+  'Rep. Tcheca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CZE10',
+  'Rep. Tcheca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CZE11',
+  'Rep. Tcheca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CZE12',
+  'Rep. Tcheca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CZE13',
+  'Rep. Tcheca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CZE14',
+  'Rep. Tcheca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CZE15',
+  'Rep. Tcheca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CZE16',
+  'Rep. Tcheca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CZE17',
+  'Rep. Tcheca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CZE18',
+  'Rep. Tcheca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CZE19',
+  'Rep. Tcheca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CZE20',
+  'Rep. Tcheca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CAN1',
+  'Canadá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CAN2',
+  'Canadá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CAN3',
+  'Canadá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CAN4',
+  'Canadá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CAN5',
+  'Canadá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CAN6',
+  'Canadá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CAN7',
+  'Canadá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CAN8',
+  'Canadá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CAN9',
+  'Canadá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CAN10',
+  'Canadá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CAN11',
+  'Canadá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CAN12',
+  'Canadá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CAN13',
+  'Canadá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CAN14',
+  'Canadá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CAN15',
+  'Canadá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CAN16',
+  'Canadá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CAN17',
+  'Canadá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CAN18',
+  'Canadá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CAN19',
+  'Canadá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CAN20',
+  'Canadá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BIH1',
+  'Bósnia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BIH2',
+  'Bósnia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BIH3',
+  'Bósnia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BIH4',
+  'Bósnia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BIH5',
+  'Bósnia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BIH6',
+  'Bósnia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BIH7',
+  'Bósnia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BIH8',
+  'Bósnia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BIH9',
+  'Bósnia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BIH10',
+  'Bósnia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BIH11',
+  'Bósnia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BIH12',
+  'Bósnia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BIH13',
+  'Bósnia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BIH14',
+  'Bósnia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BIH15',
+  'Bósnia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BIH16',
+  'Bósnia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BIH17',
+  'Bósnia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BIH18',
+  'Bósnia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BIH19',
+  'Bósnia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BIH20',
+  'Bósnia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'QAT1',
+  'Catar',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'QAT2',
+  'Catar',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'QAT3',
+  'Catar',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'QAT4',
+  'Catar',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'QAT5',
+  'Catar',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'QAT6',
+  'Catar',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'QAT7',
+  'Catar',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'QAT8',
+  'Catar',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'QAT9',
+  'Catar',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'QAT10',
+  'Catar',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'QAT11',
+  'Catar',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'QAT12',
+  'Catar',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'QAT13',
+  'Catar',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'QAT14',
+  'Catar',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'QAT15',
+  'Catar',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'QAT16',
+  'Catar',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'QAT17',
+  'Catar',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'QAT18',
+  'Catar',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'QAT19',
+  'Catar',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'QAT20',
+  'Catar',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SUI1',
+  'Suíça',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SUI2',
+  'Suíça',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SUI3',
+  'Suíça',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SUI4',
+  'Suíça',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SUI5',
+  'Suíça',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SUI6',
+  'Suíça',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SUI7',
+  'Suíça',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SUI8',
+  'Suíça',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SUI9',
+  'Suíça',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SUI10',
+  'Suíça',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SUI11',
+  'Suíça',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SUI12',
+  'Suíça',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SUI13',
+  'Suíça',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SUI14',
+  'Suíça',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SUI15',
+  'Suíça',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SUI16',
+  'Suíça',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SUI17',
+  'Suíça',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SUI18',
+  'Suíça',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SUI19',
+  'Suíça',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SUI20',
+  'Suíça',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BRA1',
+  'Brasil',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BRA2',
+  'Brasil',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BRA3',
+  'Brasil',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BRA4',
+  'Brasil',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BRA5',
+  'Brasil',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BRA6',
+  'Brasil',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BRA7',
+  'Brasil',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BRA8',
+  'Brasil',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BRA9',
+  'Brasil',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BRA10',
+  'Brasil',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BRA11',
+  'Brasil',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BRA12',
+  'Brasil',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BRA13',
+  'Brasil',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BRA14',
+  'Brasil',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BRA15',
+  'Brasil',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BRA16',
+  'Brasil',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BRA17',
+  'Brasil',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BRA18',
+  'Brasil',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BRA19',
+  'Brasil',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BRA20',
+  'Brasil',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MAR1',
+  'Marrocos',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MAR2',
+  'Marrocos',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MAR3',
+  'Marrocos',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MAR4',
+  'Marrocos',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MAR5',
+  'Marrocos',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MAR6',
+  'Marrocos',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MAR7',
+  'Marrocos',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MAR8',
+  'Marrocos',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MAR9',
+  'Marrocos',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MAR10',
+  'Marrocos',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MAR11',
+  'Marrocos',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MAR12',
+  'Marrocos',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MAR13',
+  'Marrocos',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MAR14',
+  'Marrocos',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MAR15',
+  'Marrocos',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MAR16',
+  'Marrocos',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MAR17',
+  'Marrocos',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MAR18',
+  'Marrocos',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MAR19',
+  'Marrocos',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'MAR20',
+  'Marrocos',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'HAI1',
+  'Haiti',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'HAI2',
+  'Haiti',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'HAI3',
+  'Haiti',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'HAI4',
+  'Haiti',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'HAI5',
+  'Haiti',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'HAI6',
+  'Haiti',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'HAI7',
+  'Haiti',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'HAI8',
+  'Haiti',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'HAI9',
+  'Haiti',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'HAI10',
+  'Haiti',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'HAI11',
+  'Haiti',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'HAI12',
+  'Haiti',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'HAI13',
+  'Haiti',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'HAI14',
+  'Haiti',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'HAI15',
+  'Haiti',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'HAI16',
+  'Haiti',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'HAI17',
+  'Haiti',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'HAI18',
+  'Haiti',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'HAI19',
+  'Haiti',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'HAI20',
+  'Haiti',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SCO1',
+  'Escócia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SCO2',
+  'Escócia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SCO3',
+  'Escócia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SCO4',
+  'Escócia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SCO5',
+  'Escócia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SCO6',
+  'Escócia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SCO7',
+  'Escócia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SCO8',
+  'Escócia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SCO9',
+  'Escócia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SCO10',
+  'Escócia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SCO11',
+  'Escócia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SCO12',
+  'Escócia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SCO13',
+  'Escócia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SCO14',
+  'Escócia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SCO15',
+  'Escócia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SCO16',
+  'Escócia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SCO17',
+  'Escócia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SCO18',
+  'Escócia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SCO19',
+  'Escócia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SCO20',
+  'Escócia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'USA1',
+  'EUA',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'USA2',
+  'EUA',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'USA3',
+  'EUA',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'USA4',
+  'EUA',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'USA5',
+  'EUA',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'USA6',
+  'EUA',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'USA7',
+  'EUA',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'USA8',
+  'EUA',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'USA9',
+  'EUA',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'USA10',
+  'EUA',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'USA11',
+  'EUA',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'USA12',
+  'EUA',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'USA13',
+  'EUA',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'USA14',
+  'EUA',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'USA15',
+  'EUA',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'USA16',
+  'EUA',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'USA17',
+  'EUA',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'USA18',
+  'EUA',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'USA19',
+  'EUA',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'USA20',
+  'EUA',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAR1',
+  'Paraguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAR2',
+  'Paraguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAR3',
+  'Paraguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAR4',
+  'Paraguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAR5',
+  'Paraguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAR6',
+  'Paraguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAR7',
+  'Paraguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAR8',
+  'Paraguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAR9',
+  'Paraguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAR10',
+  'Paraguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAR11',
+  'Paraguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAR12',
+  'Paraguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAR13',
+  'Paraguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAR14',
+  'Paraguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAR15',
+  'Paraguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAR16',
+  'Paraguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAR17',
+  'Paraguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAR18',
+  'Paraguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAR19',
+  'Paraguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAR20',
+  'Paraguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUS1',
+  'Austrália',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUS2',
+  'Austrália',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUS3',
+  'Austrália',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUS4',
+  'Austrália',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUS5',
+  'Austrália',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUS6',
+  'Austrália',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUS7',
+  'Austrália',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUS8',
+  'Austrália',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUS9',
+  'Austrália',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUS10',
+  'Austrália',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUS11',
+  'Austrália',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUS12',
+  'Austrália',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUS13',
+  'Austrália',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUS14',
+  'Austrália',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUS15',
+  'Austrália',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUS16',
+  'Austrália',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUS17',
+  'Austrália',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUS18',
+  'Austrália',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUS19',
+  'Austrália',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUS20',
+  'Austrália',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUR1',
+  'Turquia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUR2',
+  'Turquia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUR3',
+  'Turquia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUR4',
+  'Turquia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUR5',
+  'Turquia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUR6',
+  'Turquia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUR7',
+  'Turquia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUR8',
+  'Turquia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUR9',
+  'Turquia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUR10',
+  'Turquia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUR11',
+  'Turquia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUR12',
+  'Turquia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUR13',
+  'Turquia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUR14',
+  'Turquia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUR15',
+  'Turquia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUR16',
+  'Turquia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUR17',
+  'Turquia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUR18',
+  'Turquia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUR19',
+  'Turquia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUR20',
+  'Turquia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GER1',
+  'Alemanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GER2',
+  'Alemanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GER3',
+  'Alemanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GER4',
+  'Alemanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GER5',
+  'Alemanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GER6',
+  'Alemanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GER7',
+  'Alemanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GER8',
+  'Alemanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GER9',
+  'Alemanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GER10',
+  'Alemanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GER11',
+  'Alemanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GER12',
+  'Alemanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GER13',
+  'Alemanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GER14',
+  'Alemanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GER15',
+  'Alemanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GER16',
+  'Alemanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GER17',
+  'Alemanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GER18',
+  'Alemanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GER19',
+  'Alemanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GER20',
+  'Alemanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CUW1',
+  'Curaçao',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CUW2',
+  'Curaçao',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CUW3',
+  'Curaçao',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CUW4',
+  'Curaçao',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CUW5',
+  'Curaçao',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CUW6',
+  'Curaçao',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CUW7',
+  'Curaçao',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CUW8',
+  'Curaçao',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CUW9',
+  'Curaçao',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CUW10',
+  'Curaçao',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CUW11',
+  'Curaçao',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CUW12',
+  'Curaçao',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CUW13',
+  'Curaçao',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CUW14',
+  'Curaçao',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CUW15',
+  'Curaçao',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CUW16',
+  'Curaçao',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CUW17',
+  'Curaçao',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CUW18',
+  'Curaçao',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CUW19',
+  'Curaçao',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CUW20',
+  'Curaçao',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CIV1',
+  'C. Marfim',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CIV2',
+  'C. Marfim',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CIV3',
+  'C. Marfim',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CIV4',
+  'C. Marfim',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CIV5',
+  'C. Marfim',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CIV6',
+  'C. Marfim',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CIV7',
+  'C. Marfim',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CIV8',
+  'C. Marfim',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CIV9',
+  'C. Marfim',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CIV10',
+  'C. Marfim',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CIV11',
+  'C. Marfim',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CIV12',
+  'C. Marfim',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CIV13',
+  'C. Marfim',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CIV14',
+  'C. Marfim',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CIV15',
+  'C. Marfim',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CIV16',
+  'C. Marfim',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CIV17',
+  'C. Marfim',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CIV18',
+  'C. Marfim',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CIV19',
+  'C. Marfim',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CIV20',
+  'C. Marfim',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ECU1',
+  'Equador',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ECU2',
+  'Equador',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ECU3',
+  'Equador',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ECU4',
+  'Equador',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ECU5',
+  'Equador',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ECU6',
+  'Equador',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ECU7',
+  'Equador',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ECU8',
+  'Equador',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ECU9',
+  'Equador',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ECU10',
+  'Equador',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ECU11',
+  'Equador',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ECU12',
+  'Equador',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ECU13',
+  'Equador',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ECU14',
+  'Equador',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ECU15',
+  'Equador',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ECU16',
+  'Equador',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ECU17',
+  'Equador',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ECU18',
+  'Equador',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ECU19',
+  'Equador',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ECU20',
+  'Equador',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NED1',
+  'Holanda',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NED2',
+  'Holanda',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NED3',
+  'Holanda',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NED4',
+  'Holanda',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NED5',
+  'Holanda',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NED6',
+  'Holanda',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NED7',
+  'Holanda',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NED8',
+  'Holanda',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NED9',
+  'Holanda',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NED10',
+  'Holanda',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NED11',
+  'Holanda',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NED12',
+  'Holanda',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NED13',
+  'Holanda',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NED14',
+  'Holanda',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NED15',
+  'Holanda',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NED16',
+  'Holanda',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NED17',
+  'Holanda',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NED18',
+  'Holanda',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NED19',
+  'Holanda',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NED20',
+  'Holanda',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JPN1',
+  'Japão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JPN2',
+  'Japão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JPN3',
+  'Japão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JPN4',
+  'Japão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JPN5',
+  'Japão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JPN6',
+  'Japão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JPN7',
+  'Japão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JPN8',
+  'Japão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JPN9',
+  'Japão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JPN10',
+  'Japão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JPN11',
+  'Japão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JPN12',
+  'Japão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JPN13',
+  'Japão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JPN14',
+  'Japão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JPN15',
+  'Japão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JPN16',
+  'Japão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JPN17',
+  'Japão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JPN18',
+  'Japão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JPN19',
+  'Japão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JPN20',
+  'Japão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SWE1',
+  'Suécia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SWE2',
+  'Suécia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SWE3',
+  'Suécia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SWE4',
+  'Suécia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SWE5',
+  'Suécia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SWE6',
+  'Suécia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SWE7',
+  'Suécia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SWE8',
+  'Suécia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SWE9',
+  'Suécia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SWE10',
+  'Suécia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SWE11',
+  'Suécia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SWE12',
+  'Suécia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SWE13',
+  'Suécia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SWE14',
+  'Suécia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SWE15',
+  'Suécia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SWE16',
+  'Suécia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SWE17',
+  'Suécia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SWE18',
+  'Suécia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SWE19',
+  'Suécia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SWE20',
+  'Suécia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUN1',
+  'Tunísia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUN2',
+  'Tunísia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUN3',
+  'Tunísia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUN4',
+  'Tunísia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUN5',
+  'Tunísia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUN6',
+  'Tunísia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUN7',
+  'Tunísia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUN8',
+  'Tunísia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUN9',
+  'Tunísia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUN10',
+  'Tunísia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUN11',
+  'Tunísia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUN12',
+  'Tunísia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUN13',
+  'Tunísia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUN14',
+  'Tunísia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUN15',
+  'Tunísia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUN16',
+  'Tunísia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUN17',
+  'Tunísia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUN18',
+  'Tunísia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUN19',
+  'Tunísia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'TUN20',
+  'Tunísia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BEL1',
+  'Bélgica',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BEL2',
+  'Bélgica',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BEL3',
+  'Bélgica',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BEL4',
+  'Bélgica',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BEL5',
+  'Bélgica',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BEL6',
+  'Bélgica',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BEL7',
+  'Bélgica',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BEL8',
+  'Bélgica',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BEL9',
+  'Bélgica',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BEL10',
+  'Bélgica',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BEL11',
+  'Bélgica',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BEL12',
+  'Bélgica',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BEL13',
+  'Bélgica',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BEL14',
+  'Bélgica',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BEL15',
+  'Bélgica',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BEL16',
+  'Bélgica',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BEL17',
+  'Bélgica',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BEL18',
+  'Bélgica',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BEL19',
+  'Bélgica',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'BEL20',
+  'Bélgica',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'EGY1',
+  'Egito',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'EGY2',
+  'Egito',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'EGY3',
+  'Egito',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'EGY4',
+  'Egito',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'EGY5',
+  'Egito',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'EGY6',
+  'Egito',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'EGY7',
+  'Egito',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'EGY8',
+  'Egito',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'EGY9',
+  'Egito',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'EGY10',
+  'Egito',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'EGY11',
+  'Egito',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'EGY12',
+  'Egito',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'EGY13',
+  'Egito',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'EGY14',
+  'Egito',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'EGY15',
+  'Egito',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'EGY16',
+  'Egito',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'EGY17',
+  'Egito',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'EGY18',
+  'Egito',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'EGY19',
+  'Egito',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'EGY20',
+  'Egito',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRN1',
+  'Irã',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRN2',
+  'Irã',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRN3',
+  'Irã',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRN4',
+  'Irã',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRN5',
+  'Irã',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRN6',
+  'Irã',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRN7',
+  'Irã',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRN8',
+  'Irã',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRN9',
+  'Irã',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRN10',
+  'Irã',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRN11',
+  'Irã',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRN12',
+  'Irã',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRN13',
+  'Irã',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRN14',
+  'Irã',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRN15',
+  'Irã',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRN16',
+  'Irã',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRN17',
+  'Irã',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRN18',
+  'Irã',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRN19',
+  'Irã',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRN20',
+  'Irã',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NZL1',
+  'N. Zelândia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NZL2',
+  'N. Zelândia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NZL3',
+  'N. Zelândia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NZL4',
+  'N. Zelândia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NZL5',
+  'N. Zelândia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NZL6',
+  'N. Zelândia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NZL7',
+  'N. Zelândia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NZL8',
+  'N. Zelândia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NZL9',
+  'N. Zelândia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NZL10',
+  'N. Zelândia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NZL11',
+  'N. Zelândia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NZL12',
+  'N. Zelândia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NZL13',
+  'N. Zelândia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NZL14',
+  'N. Zelândia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NZL15',
+  'N. Zelândia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NZL16',
+  'N. Zelândia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NZL17',
+  'N. Zelândia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NZL18',
+  'N. Zelândia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NZL19',
+  'N. Zelândia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NZL20',
+  'N. Zelândia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ESP1',
+  'Espanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ESP2',
+  'Espanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ESP3',
+  'Espanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ESP4',
+  'Espanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ESP5',
+  'Espanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ESP6',
+  'Espanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ESP7',
+  'Espanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ESP8',
+  'Espanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ESP9',
+  'Espanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ESP10',
+  'Espanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ESP11',
+  'Espanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ESP12',
+  'Espanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ESP13',
+  'Espanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ESP14',
+  'Espanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ESP15',
+  'Espanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ESP16',
+  'Espanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ESP17',
+  'Espanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ESP18',
+  'Espanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ESP19',
+  'Espanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ESP20',
+  'Espanha',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CPV1',
+  'Cabo Verde',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CPV2',
+  'Cabo Verde',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CPV3',
+  'Cabo Verde',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CPV4',
+  'Cabo Verde',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CPV5',
+  'Cabo Verde',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CPV6',
+  'Cabo Verde',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CPV7',
+  'Cabo Verde',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CPV8',
+  'Cabo Verde',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CPV9',
+  'Cabo Verde',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CPV10',
+  'Cabo Verde',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CPV11',
+  'Cabo Verde',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CPV12',
+  'Cabo Verde',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CPV13',
+  'Cabo Verde',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CPV14',
+  'Cabo Verde',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CPV15',
+  'Cabo Verde',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CPV16',
+  'Cabo Verde',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CPV17',
+  'Cabo Verde',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CPV18',
+  'Cabo Verde',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CPV19',
+  'Cabo Verde',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CPV20',
+  'Cabo Verde',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KSA1',
+  'Arábia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KSA2',
+  'Arábia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KSA3',
+  'Arábia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KSA4',
+  'Arábia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KSA5',
+  'Arábia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KSA6',
+  'Arábia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KSA7',
+  'Arábia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KSA8',
+  'Arábia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KSA9',
+  'Arábia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KSA10',
+  'Arábia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KSA11',
+  'Arábia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KSA12',
+  'Arábia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KSA13',
+  'Arábia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KSA14',
+  'Arábia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KSA15',
+  'Arábia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KSA16',
+  'Arábia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KSA17',
+  'Arábia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KSA18',
+  'Arábia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KSA19',
+  'Arábia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'KSA20',
+  'Arábia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'URU1',
+  'Uruguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'URU2',
+  'Uruguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'URU3',
+  'Uruguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'URU4',
+  'Uruguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'URU5',
+  'Uruguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'URU6',
+  'Uruguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'URU7',
+  'Uruguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'URU8',
+  'Uruguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'URU9',
+  'Uruguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'URU10',
+  'Uruguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'URU11',
+  'Uruguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'URU12',
+  'Uruguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'URU13',
+  'Uruguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'URU14',
+  'Uruguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'URU15',
+  'Uruguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'URU16',
+  'Uruguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'URU17',
+  'Uruguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'URU18',
+  'Uruguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'URU19',
+  'Uruguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'URU20',
+  'Uruguai',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'FRA1',
+  'França',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'FRA2',
+  'França',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'FRA3',
+  'França',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'FRA4',
+  'França',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'FRA5',
+  'França',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'FRA6',
+  'França',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'FRA7',
+  'França',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'FRA8',
+  'França',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'FRA9',
+  'França',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'FRA10',
+  'França',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'FRA11',
+  'França',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'FRA12',
+  'França',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'FRA13',
+  'França',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'FRA14',
+  'França',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'FRA15',
+  'França',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'FRA16',
+  'França',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'FRA17',
+  'França',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'FRA18',
+  'França',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'FRA19',
+  'França',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'FRA20',
+  'França',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SEN1',
+  'Senegal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SEN2',
+  'Senegal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SEN3',
+  'Senegal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SEN4',
+  'Senegal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SEN5',
+  'Senegal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SEN6',
+  'Senegal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SEN7',
+  'Senegal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SEN8',
+  'Senegal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SEN9',
+  'Senegal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SEN10',
+  'Senegal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SEN11',
+  'Senegal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SEN12',
+  'Senegal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SEN13',
+  'Senegal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SEN14',
+  'Senegal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SEN15',
+  'Senegal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SEN16',
+  'Senegal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SEN17',
+  'Senegal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SEN18',
+  'Senegal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SEN19',
+  'Senegal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'SEN20',
+  'Senegal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRQ1',
+  'Iraque',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRQ2',
+  'Iraque',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRQ3',
+  'Iraque',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRQ4',
+  'Iraque',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRQ5',
+  'Iraque',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRQ6',
+  'Iraque',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRQ7',
+  'Iraque',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRQ8',
+  'Iraque',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRQ9',
+  'Iraque',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRQ10',
+  'Iraque',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRQ11',
+  'Iraque',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRQ12',
+  'Iraque',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRQ13',
+  'Iraque',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRQ14',
+  'Iraque',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRQ15',
+  'Iraque',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRQ16',
+  'Iraque',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRQ17',
+  'Iraque',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRQ18',
+  'Iraque',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRQ19',
+  'Iraque',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'IRQ20',
+  'Iraque',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NOR1',
+  'Noruega',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NOR2',
+  'Noruega',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NOR3',
+  'Noruega',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NOR4',
+  'Noruega',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NOR5',
+  'Noruega',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NOR6',
+  'Noruega',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NOR7',
+  'Noruega',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NOR8',
+  'Noruega',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NOR9',
+  'Noruega',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NOR10',
+  'Noruega',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NOR11',
+  'Noruega',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NOR12',
+  'Noruega',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NOR13',
+  'Noruega',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NOR14',
+  'Noruega',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NOR15',
+  'Noruega',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NOR16',
+  'Noruega',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NOR17',
+  'Noruega',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NOR18',
+  'Noruega',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NOR19',
+  'Noruega',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'NOR20',
+  'Noruega',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ARG1',
+  'Argentina',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ARG2',
+  'Argentina',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ARG3',
+  'Argentina',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ARG4',
+  'Argentina',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ARG5',
+  'Argentina',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ARG6',
+  'Argentina',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ARG7',
+  'Argentina',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ARG8',
+  'Argentina',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ARG9',
+  'Argentina',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ARG10',
+  'Argentina',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ARG11',
+  'Argentina',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ARG12',
+  'Argentina',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ARG13',
+  'Argentina',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ARG14',
+  'Argentina',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ARG15',
+  'Argentina',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ARG16',
+  'Argentina',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ARG17',
+  'Argentina',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ARG18',
+  'Argentina',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ARG19',
+  'Argentina',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ARG20',
+  'Argentina',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ALG1',
+  'Argélia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ALG2',
+  'Argélia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ALG3',
+  'Argélia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ALG4',
+  'Argélia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ALG5',
+  'Argélia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ALG6',
+  'Argélia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ALG7',
+  'Argélia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ALG8',
+  'Argélia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ALG9',
+  'Argélia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ALG10',
+  'Argélia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ALG11',
+  'Argélia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ALG12',
+  'Argélia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ALG13',
+  'Argélia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ALG14',
+  'Argélia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ALG15',
+  'Argélia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ALG16',
+  'Argélia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ALG17',
+  'Argélia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ALG18',
+  'Argélia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ALG19',
+  'Argélia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ALG20',
+  'Argélia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUT1',
+  'Áustria',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUT2',
+  'Áustria',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUT3',
+  'Áustria',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUT4',
+  'Áustria',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUT5',
+  'Áustria',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUT6',
+  'Áustria',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUT7',
+  'Áustria',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUT8',
+  'Áustria',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUT9',
+  'Áustria',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUT10',
+  'Áustria',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUT11',
+  'Áustria',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUT12',
+  'Áustria',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUT13',
+  'Áustria',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUT14',
+  'Áustria',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUT15',
+  'Áustria',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUT16',
+  'Áustria',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUT17',
+  'Áustria',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUT18',
+  'Áustria',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUT19',
+  'Áustria',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'AUT20',
+  'Áustria',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JOR1',
+  'Jordânia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JOR2',
+  'Jordânia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JOR3',
+  'Jordânia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JOR4',
+  'Jordânia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JOR5',
+  'Jordânia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JOR6',
+  'Jordânia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JOR7',
+  'Jordânia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JOR8',
+  'Jordânia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JOR9',
+  'Jordânia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JOR10',
+  'Jordânia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JOR11',
+  'Jordânia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JOR12',
+  'Jordânia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JOR13',
+  'Jordânia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JOR14',
+  'Jordânia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JOR15',
+  'Jordânia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JOR16',
+  'Jordânia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JOR17',
+  'Jordânia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JOR18',
+  'Jordânia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JOR19',
+  'Jordânia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'JOR20',
+  'Jordânia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'POR1',
+  'Portugal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'POR2',
+  'Portugal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'POR3',
+  'Portugal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'POR4',
+  'Portugal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'POR5',
+  'Portugal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'POR6',
+  'Portugal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'POR7',
+  'Portugal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'POR8',
+  'Portugal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'POR9',
+  'Portugal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'POR10',
+  'Portugal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'POR11',
+  'Portugal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'POR12',
+  'Portugal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'POR13',
+  'Portugal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'POR14',
+  'Portugal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'POR15',
+  'Portugal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'POR16',
+  'Portugal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'POR17',
+  'Portugal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'POR18',
+  'Portugal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'POR19',
+  'Portugal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'POR20',
+  'Portugal',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COD1',
+  'RD Congo',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COD2',
+  'RD Congo',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COD3',
+  'RD Congo',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COD4',
+  'RD Congo',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COD5',
+  'RD Congo',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COD6',
+  'RD Congo',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COD7',
+  'RD Congo',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COD8',
+  'RD Congo',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COD9',
+  'RD Congo',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COD10',
+  'RD Congo',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COD11',
+  'RD Congo',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COD12',
+  'RD Congo',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COD13',
+  'RD Congo',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COD14',
+  'RD Congo',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COD15',
+  'RD Congo',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COD16',
+  'RD Congo',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COD17',
+  'RD Congo',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COD18',
+  'RD Congo',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COD19',
+  'RD Congo',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COD20',
+  'RD Congo',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'UZB1',
+  'Uzbequistão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'UZB2',
+  'Uzbequistão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'UZB3',
+  'Uzbequistão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'UZB4',
+  'Uzbequistão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'UZB5',
+  'Uzbequistão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'UZB6',
+  'Uzbequistão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'UZB7',
+  'Uzbequistão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'UZB8',
+  'Uzbequistão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'UZB9',
+  'Uzbequistão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'UZB10',
+  'Uzbequistão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'UZB11',
+  'Uzbequistão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'UZB12',
+  'Uzbequistão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'UZB13',
+  'Uzbequistão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'UZB14',
+  'Uzbequistão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'UZB15',
+  'Uzbequistão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'UZB16',
+  'Uzbequistão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'UZB17',
+  'Uzbequistão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'UZB18',
+  'Uzbequistão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'UZB19',
+  'Uzbequistão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'UZB20',
+  'Uzbequistão',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COL1',
+  'Colômbia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COL2',
+  'Colômbia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COL3',
+  'Colômbia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COL4',
+  'Colômbia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COL5',
+  'Colômbia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COL6',
+  'Colômbia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COL7',
+  'Colômbia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COL8',
+  'Colômbia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COL9',
+  'Colômbia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COL10',
+  'Colômbia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COL11',
+  'Colômbia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COL12',
+  'Colômbia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COL13',
+  'Colômbia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COL14',
+  'Colômbia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COL15',
+  'Colômbia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COL16',
+  'Colômbia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COL17',
+  'Colômbia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COL18',
+  'Colômbia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COL19',
+  'Colômbia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'COL20',
+  'Colômbia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ENG1',
+  'Inglaterra',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ENG2',
+  'Inglaterra',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ENG3',
+  'Inglaterra',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ENG4',
+  'Inglaterra',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ENG5',
+  'Inglaterra',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ENG6',
+  'Inglaterra',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ENG7',
+  'Inglaterra',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ENG8',
+  'Inglaterra',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ENG9',
+  'Inglaterra',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ENG10',
+  'Inglaterra',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ENG11',
+  'Inglaterra',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ENG12',
+  'Inglaterra',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ENG13',
+  'Inglaterra',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ENG14',
+  'Inglaterra',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ENG15',
+  'Inglaterra',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ENG16',
+  'Inglaterra',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ENG17',
+  'Inglaterra',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ENG18',
+  'Inglaterra',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ENG19',
+  'Inglaterra',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'ENG20',
+  'Inglaterra',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CRO1',
+  'Croácia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CRO2',
+  'Croácia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CRO3',
+  'Croácia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CRO4',
+  'Croácia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CRO5',
+  'Croácia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CRO6',
+  'Croácia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CRO7',
+  'Croácia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CRO8',
+  'Croácia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CRO9',
+  'Croácia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CRO10',
+  'Croácia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CRO11',
+  'Croácia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CRO12',
+  'Croácia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CRO13',
+  'Croácia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CRO14',
+  'Croácia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CRO15',
+  'Croácia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CRO16',
+  'Croácia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CRO17',
+  'Croácia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CRO18',
+  'Croácia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CRO19',
+  'Croácia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CRO20',
+  'Croácia',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GHA1',
+  'Gana',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GHA2',
+  'Gana',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GHA3',
+  'Gana',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GHA4',
+  'Gana',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GHA5',
+  'Gana',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GHA6',
+  'Gana',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GHA7',
+  'Gana',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GHA8',
+  'Gana',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GHA9',
+  'Gana',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GHA10',
+  'Gana',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GHA11',
+  'Gana',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GHA12',
+  'Gana',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GHA13',
+  'Gana',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GHA14',
+  'Gana',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GHA15',
+  'Gana',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GHA16',
+  'Gana',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GHA17',
+  'Gana',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GHA18',
+  'Gana',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GHA19',
+  'Gana',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'GHA20',
+  'Gana',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAN1',
+  'Panamá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAN2',
+  'Panamá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAN3',
+  'Panamá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAN4',
+  'Panamá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAN5',
+  'Panamá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAN6',
+  'Panamá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAN7',
+  'Panamá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAN8',
+  'Panamá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAN9',
+  'Panamá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAN10',
+  'Panamá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAN11',
+  'Panamá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAN12',
+  'Panamá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAN13',
+  'Panamá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAN14',
+  'Panamá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAN15',
+  'Panamá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAN16',
+  'Panamá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAN17',
+  'Panamá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAN18',
+  'Panamá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAN19',
+  'Panamá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'PAN20',
+  'Panamá',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'FWC9',
+  'História',
+  false,
+  0,
+  'História'
+)
+,
+(
+  'FWC10',
+  'História',
+  false,
+  0,
+  'História'
+)
+,
+(
+  'FWC11',
+  'História',
+  false,
+  0,
+  'História'
+)
+,
+(
+  'FWC12',
+  'História',
+  false,
+  0,
+  'História'
+)
+,
+(
+  'FWC13',
+  'História',
+  false,
+  0,
+  'História'
+)
+,
+(
+  'FWC14',
+  'História',
+  false,
+  0,
+  'História'
+)
+,
+(
+  'FWC15',
+  'História',
+  false,
+  0,
+  'História'
+)
+,
+(
+  'FWC16',
+  'História',
+  false,
+  0,
+  'História'
+)
+,
+(
+  'FWC17',
+  'História',
+  false,
+  0,
+  'História'
+)
+,
+(
+  'FWC18',
+  'História',
+  false,
+  0,
+  'História'
+)
+,
+(
+  'FWC19',
+  'História',
+  false,
+  0,
+  'História'
+)
+,
+(
+  'CC1',
+  'Coca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CC2',
+  'Coca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CC3',
+  'Coca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CC4',
+  'Coca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CC5',
+  'Coca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CC6',
+  'Coca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CC7',
+  'Coca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CC8',
+  'Coca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CC9',
+  'Coca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CC10',
+  'Coca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CC11',
+  'Coca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CC12',
+  'Coca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CC13',
+  'Coca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'CC14',
+  'Coca',
+  false,
+  0,
+  'Seleção'
+)
+,
+(
+  'REGU',
+  'Extras',
+  false,
+  0,
+  'Extras'
+)
+,
+(
+  'BRON',
+  'Extras',
+  false,
+  0,
+  'Extras'
+)
+,
+(
+  'PRAT',
+  'Extras',
+  false,
+  0,
+  'Extras'
+)
+,
+(
+  'OURO',
+  'Extras',
+  false,
+  0,
+  'Extras'
+)
+;
