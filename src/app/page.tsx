@@ -421,7 +421,7 @@ export default function Home() {
                   <div
                     className="
                       grid
-                      grid-cols-3
+                      grid-cols-4
                       sm:grid-cols-4
                       md:grid-cols-5
                       lg:grid-cols-6
