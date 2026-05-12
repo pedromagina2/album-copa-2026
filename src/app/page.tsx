@@ -16,15 +16,16 @@ type Sticker = {
 const ORDER_MAP = new Map<string, number>()
 let orderIndex = 0
 
+// Removemos espaços para evitar falhas na comparação
 secoes.forEach((secao: any) => {
   if (secao.ids) {
     secao.ids.forEach((id: string) => {
-      ORDER_MAP.set(id, orderIndex++)
+      ORDER_MAP.set(id.replace(/\s/g, ''), orderIndex++)
     })
   }
   if (secao.p && secao.q) {
     for (let i = 1; i <= secao.q; i++) {
-      ORDER_MAP.set(`${secao.p}${i}`, orderIndex++)
+      ORDER_MAP.set(`${secao.p}${i}`.replace(/\s/g, ''), orderIndex++)
     }
   }
 })
@@ -50,6 +51,7 @@ export default function Home() {
     const { data, error } = await supabase
       .from('stickers')
       .select('*')
+      .order('id') // <-- ISSO GARANTE A ORDEM DO BANCO
 
     if (error) {
       console.error(error)
@@ -135,19 +137,18 @@ export default function Home() {
   const grouped = useMemo(() => {
     const groups: Record<string, Sticker[]> = {}
 
-    // 1. Cria a estrutura na ordem exata das seções para os menus
     secoes.forEach((secao: any) => {
       if (typeof secao === 'string') {
         groups[secao] = []
       }
     })
 
-    // 2. Ordena as figurinhas filtradas usando o mapa global
     const sorted = [...filtered].sort((a, b) => {
-      return (ORDER_MAP.get(a.code) ?? 99999) - (ORDER_MAP.get(b.code) ?? 99999)
+      const orderA = ORDER_MAP.get(a.code.replace(/\s/g, '')) ?? a.id
+      const orderB = ORDER_MAP.get(b.code.replace(/\s/g, '')) ?? b.id
+      return orderA - orderB
     })
 
-    // 3. Distribui as figurinhas ordenadas nos grupos
     sorted.forEach((sticker) => {
       if (!groups[sticker.country]) {
         groups[sticker.country] = []
@@ -350,7 +351,11 @@ type FilterProps = {
 function copyMissing(stickers: Sticker[]) {
   const missing = stickers
     .filter((s) => !s.owned)
-    .sort((a, b) => (ORDER_MAP.get(a.code) ?? 99999) - (ORDER_MAP.get(b.code) ?? 99999))
+    .sort((a, b) => {
+      const orderA = ORDER_MAP.get(a.code.replace(/\s/g, '')) ?? a.id
+      const orderB = ORDER_MAP.get(b.code.replace(/\s/g, '')) ?? b.id
+      return orderA - orderB
+    })
     .map((s) => s.code)
 
   navigator.clipboard.writeText('FALTANTES 2026:\n\n' + missing.join(', '))
@@ -360,7 +365,11 @@ function copyMissing(stickers: Sticker[]) {
 function copyDuplicates(stickers: Sticker[]) {
   const duplicates = stickers
     .filter((s) => s.duplicates > 0)
-    .sort((a, b) => (ORDER_MAP.get(a.code) ?? 99999) - (ORDER_MAP.get(b.code) ?? 99999))
+    .sort((a, b) => {
+      const orderA = ORDER_MAP.get(a.code.replace(/\s/g, '')) ?? a.id
+      const orderB = ORDER_MAP.get(b.code.replace(/\s/g, '')) ?? b.id
+      return orderA - orderB
+    })
     .map((s) => `${s.code}(x${s.duplicates})`)
 
   navigator.clipboard.writeText('REPETIDAS 2026:\n\n' + duplicates.join(', '))
