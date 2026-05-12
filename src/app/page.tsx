@@ -158,115 +158,54 @@ export default function Home() {
       Sticker[]
     > = {}
 
-    const orderMap = new Map<
+    // mapa rápido das figurinhas
+    const stickerMap = new Map<
       string,
-      number
+      Sticker
     >()
 
-    let index = 0
+    filtered.forEach((s) => {
+      stickerMap.set(s.code, s)
+    })
 
-    const grouped = useMemo(() => {
-      const groups: Record<
-        string,
-        Sticker[]
-      > = {}
+    // percorre exatamente na ordem do álbum
+    secoes.forEach((secao: any) => {
+      const sectionName =
+        secao.n || secao
 
-      const orderMap = new Map<
-        string,
-        number
-      >()
+      groups[sectionName] = []
 
-      let index = 0
+      let ids: string[] = []
 
-      secoes.forEach((secao: any) => {
+      // se tiver ids fixos
+      if (secao.ids) {
+        ids = [...secao.ids]
+      }
 
-        // cria o grupo da seção
-        if (typeof secao === 'string') {
-          groups[secao] = []
-        }
-
-        // ordem personalizada
-        if (secao.ids) {
-          secao.ids.forEach(
-            (id: string) => {
-              orderMap.set(
-                id,
-                index++
-              )
-            }
-          )
-        }
-
-        // ordem automática
-        if (secao.p && secao.q) {
-          for (
-            let i = 1;
-            i <= secao.q;
-            i++
-          ) {
-            orderMap.set(
-              `${secao.p}${i}`,
-              index++
-            )
-          }
-        }
-      })
-
-      const sorted = [...filtered].sort(
-        (a, b) => {
-          return (
-            (orderMap.get(
-              a.code
-            ) ?? 99999) -
-            (orderMap.get(
-              b.code
-            ) ?? 99999)
-          )
-        }
-      )
-
-      sorted.forEach((sticker) => {
-        if (
-          !groups[sticker.country]
+      // se for sequência tipo BRA1..20
+      if (secao.p && secao.q) {
+        for (
+          let i = 1;
+          i <= secao.q;
+          i++
         ) {
-          groups[
-            sticker.country
-          ] = []
+          ids.push(
+            `${secao.p}${i}`
+          )
         }
+      }
 
-        groups[
-          sticker.country
-        ].push(sticker)
+      // adiciona na ordem EXATA
+      ids.forEach((id) => {
+        const sticker =
+          stickerMap.get(id)
+
+        if (sticker) {
+          groups[
+            sectionName
+          ].push(sticker)
+        }
       })
-
-      return groups
-    }, [filtered])
-
-    const sorted = [...filtered].sort(
-      (a, b) => {
-        return (
-          (orderMap.get(
-            a.code
-          ) ?? 99999) -
-          (orderMap.get(
-            b.code
-          ) ?? 99999)
-        )
-      }
-    )
-
-    sorted.forEach((sticker) => {
-      if (
-        !groups[sticker.country]
-      ) {
-        groups[
-          sticker.country
-        ] = []
-      }
-
-      groups[
-        sticker.country
-      ].push(sticker)
     })
 
     return groups
@@ -422,53 +361,58 @@ export default function Home() {
       </header>
 
       <div className="max-w-7xl mx-auto p-3">
-        {Object.entries(grouped).map(
-          ([country, list]) => {
+        {Object.entries(grouped)
+          .filter(
+            ([_, list]) =>
+              list.length > 0
+          )
+          .map(
+            ([country, list]) => {
 
-            if (list.length === 0)
-              return null
+              if (list.length === 0)
+                return null
 
-            const ownedCountry =
-              list.filter(
-                (s) => s.owned
-              ).length
+              const ownedCountry =
+                list.filter(
+                  (s) => s.owned
+                ).length
 
-            const percentCountry =
-              (
-                (ownedCountry /
-                  list.length) *
-                100
-              ).toFixed(0)
+              const percentCountry =
+                (
+                  (ownedCountry /
+                    list.length) *
+                  100
+                ).toFixed(0)
 
-            return (
-              <section
-                key={country}
-                className="mb-10"
-              >
-                <div
-                  className={`sticky top-[220px] z-40 backdrop-blur py-3 mb-4 border-b ${theme === 'dark'
-                    ? 'bg-zinc-950/95 border-zinc-800'
-                    : 'bg-white/95 border-zinc-300'
-                    }`}
+              return (
+                <section
+                  key={country}
+                  className="mb-10"
                 >
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <h2 className="text-xl sm:text-2xl font-black">
-                        {country}
-                      </h2>
+                  <div
+                    className={`sticky top-[220px] z-40 backdrop-blur py-3 mb-4 border-b ${theme === 'dark'
+                      ? 'bg-zinc-950/95 border-zinc-800'
+                      : 'bg-white/95 border-zinc-300'
+                      }`}
+                  >
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <h2 className="text-xl sm:text-2xl font-black">
+                          {country}
+                        </h2>
 
-                      <p className="text-zinc-400 text-sm">
-                        {ownedCountry}/
-                        {list.length}
-                        {' • '}
-                        {percentCountry}%
-                      </p>
+                        <p className="text-zinc-400 text-sm">
+                          {ownedCountry}/
+                          {list.length}
+                          {' • '}
+                          {percentCountry}%
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div
-                  className="
+                  <div
+                    className="
                   grid
                   grid-cols-3
                   sm:grid-cols-4
@@ -478,104 +422,104 @@ export default function Home() {
                   2xl:grid-cols-8
                   gap-3
                 "
-                >
-                  {list.map((sticker) => (
-                    <div
-                      key={sticker.id}
-                      className={`rounded-2xl p-3 border transition-all duration-200 ${sticker.owned
-                        ? 'bg-green-500/20 border-green-500 shadow-lg shadow-green-500/20'
-                        : theme === 'dark'
-                          ? 'bg-zinc-900 border-zinc-800'
-                          : 'bg-white border-zinc-300'
-                        }`}
-                    >
-                      <div className="flex items-start justify-between">
-                        <div>
-                          <p className="text-lg sm:text-xl font-black">
-                            {sticker.code}
-                          </p>
-
-                          <p className="text-zinc-400 text-xs">
-                            {
-                              sticker.category
-                            }
-                          </p>
-                        </div>
-
-                        {sticker.owned && (
-                          <div className="text-green-400 text-xl font-black">
-                            ✓
-                          </div>
-                        )}
-                      </div>
-
-                      <button
-                        onClick={() =>
-                          toggleOwned(
-                            sticker
-                          )
-                        }
-                        className={`mt-3 w-full py-2 rounded-xl font-bold transition-all text-sm ${sticker.owned
-                          ? 'bg-green-500 text-black'
+                  >
+                    {list.map((sticker) => (
+                      <div
+                        key={sticker.id}
+                        className={`rounded-2xl p-3 border transition-all duration-200 ${sticker.owned
+                          ? 'bg-green-500/20 border-green-500 shadow-lg shadow-green-500/20'
                           : theme === 'dark'
-                            ? 'bg-zinc-800 hover:bg-zinc-700'
-                            : 'bg-zinc-200 hover:bg-zinc-300'
+                            ? 'bg-zinc-900 border-zinc-800'
+                            : 'bg-white border-zinc-300'
                           }`}
                       >
-                        {sticker.owned
-                          ? 'Tenho'
-                          : 'Marcar'}
-                      </button>
+                        <div className="flex items-start justify-between">
+                          <div>
+                            <p className="text-lg sm:text-xl font-black">
+                              {sticker.code}
+                            </p>
 
-                      <div className="mt-3">
-                        <p className="text-xs text-zinc-400 mb-2 text-center">
-                          Repetidas
-                        </p>
-
-                        <div className="flex items-center justify-between gap-2">
-                          <button
-                            onClick={() =>
-                              changeDuplicates(
-                                sticker,
-                                -1
-                              )
-                            }
-                            className="flex-1 h-9 rounded-xl bg-red-500 font-black text-lg"
-                          >
-                            -
-                          </button>
-
-                          <div
-                            className={`w-10 h-9 rounded-xl flex items-center justify-center font-black ${theme === 'dark'
-                              ? 'bg-zinc-800'
-                              : 'bg-zinc-200'
-                              }`}
-                          >
-                            {
-                              sticker.duplicates
-                            }
+                            <p className="text-zinc-400 text-xs">
+                              {
+                                sticker.category
+                              }
+                            </p>
                           </div>
 
-                          <button
-                            onClick={() =>
-                              changeDuplicates(
-                                sticker,
-                                1
-                              )
-                            }
-                            className="flex-1 h-9 rounded-xl bg-green-500 text-black font-black text-lg"
-                          >
-                            +
-                          </button>
+                          {sticker.owned && (
+                            <div className="text-green-400 text-xl font-black">
+                              ✓
+                            </div>
+                          )}
+                        </div>
+
+                        <button
+                          onClick={() =>
+                            toggleOwned(
+                              sticker
+                            )
+                          }
+                          className={`mt-3 w-full py-2 rounded-xl font-bold transition-all text-sm ${sticker.owned
+                            ? 'bg-green-500 text-black'
+                            : theme === 'dark'
+                              ? 'bg-zinc-800 hover:bg-zinc-700'
+                              : 'bg-zinc-200 hover:bg-zinc-300'
+                            }`}
+                        >
+                          {sticker.owned
+                            ? 'Tenho'
+                            : 'Marcar'}
+                        </button>
+
+                        <div className="mt-3">
+                          <p className="text-xs text-zinc-400 mb-2 text-center">
+                            Repetidas
+                          </p>
+
+                          <div className="flex items-center justify-between gap-2">
+                            <button
+                              onClick={() =>
+                                changeDuplicates(
+                                  sticker,
+                                  -1
+                                )
+                              }
+                              className="flex-1 h-9 rounded-xl bg-red-500 font-black text-lg"
+                            >
+                              -
+                            </button>
+
+                            <div
+                              className={`w-10 h-9 rounded-xl flex items-center justify-center font-black ${theme === 'dark'
+                                ? 'bg-zinc-800'
+                                : 'bg-zinc-200'
+                                }`}
+                            >
+                              {
+                                sticker.duplicates
+                              }
+                            </div>
+
+                            <button
+                              onClick={() =>
+                                changeDuplicates(
+                                  sticker,
+                                  1
+                                )
+                              }
+                              className="flex-1 h-9 rounded-xl bg-green-500 text-black font-black text-lg"
+                            >
+                              +
+                            </button>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-            )
-          }
-        )}
+                    ))}
+                  </div>
+                </section>
+              )
+            }
+          )}
       </div>
     </main>
   )
