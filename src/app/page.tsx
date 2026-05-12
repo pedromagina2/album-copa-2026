@@ -16,7 +16,6 @@ type Sticker = {
 const ORDER_MAP = new Map<string, number>()
 let orderIndex = 0
 
-// Removemos espaços para evitar falhas na comparação
 secoes.forEach((secao: any) => {
   if (secao.ids) {
     secao.ids.forEach((id: string) => {
@@ -51,7 +50,7 @@ export default function Home() {
     const { data, error } = await supabase
       .from('stickers')
       .select('*')
-      .order('id') // <-- ISSO GARANTE A ORDEM DO BANCO
+      .order('id')
 
     if (error) {
       console.error(error)
@@ -68,11 +67,7 @@ export default function Home() {
       .channel('stickers-realtime')
       .on(
         'postgres_changes',
-        {
-          event: '*',
-          schema: 'public',
-          table: 'stickers'
-        },
+        { event: '*', schema: 'public', table: 'stickers' },
         () => {
           fetchStickers()
         }
@@ -118,17 +113,9 @@ export default function Home() {
         s.code.toLowerCase().includes(search.toLowerCase()) ||
         s.country.toLowerCase().includes(search.toLowerCase())
 
-      if (filter === 'owned') {
-        return matchesSearch && s.owned
-      }
-
-      if (filter === 'missing') {
-        return matchesSearch && !s.owned
-      }
-
-      if (filter === 'duplicates') {
-        return matchesSearch && s.duplicates > 0
-      }
+      if (filter === 'owned') return matchesSearch && s.owned
+      if (filter === 'missing') return matchesSearch && !s.owned
+      if (filter === 'duplicates') return matchesSearch && s.duplicates > 0
 
       return matchesSearch
     })
@@ -160,94 +147,92 @@ export default function Home() {
   }, [filtered])
 
   const ownedCount = stickers.filter((s) => s.owned).length
-
   const totalDuplicates = stickers.reduce((acc, s) => acc + s.duplicates, 0)
+  const percent = stickers.length ? ((ownedCount / stickers.length) * 100).toFixed(1) : '0'
 
-  const percent = stickers.length
-    ? ((ownedCount / stickers.length) * 100).toFixed(1)
-    : '0'
+  const subTextColor = theme === 'dark' ? 'text-zinc-400' : 'text-zinc-500'
 
   return (
     <main
-      className={`min-h-screen transition-all duration-300 ${
-        theme === 'dark' ? 'bg-zinc-950 text-white' : 'bg-zinc-100 text-black'
-      }`}
+      className={`min-h-screen transition-all duration-300 ${theme === 'dark' ? 'bg-zinc-950 text-white' : 'bg-zinc-50 text-zinc-900'
+        }`}
     >
       <header
-        className={`sticky top-0 z-50 backdrop-blur border-b ${
-          theme === 'dark' ? 'bg-zinc-950/90 border-zinc-800' : 'bg-white/90 border-zinc-300'
-        }`}
+        className={`sticky top-0 z-50 backdrop-blur-md border-b ${theme === 'dark' ? 'bg-zinc-950/80 border-zinc-800' : 'bg-white/80 border-zinc-200'
+          }`}
       >
-        <div className="max-w-7xl mx-auto p-4">
+        <div className="max-w-7xl mx-auto p-4 sm:p-6">
           <div className="flex items-center justify-between gap-4">
             <div>
-              <h1 className="text-3xl font-black">⚽ Álbum Copa 2026</h1>
-              <p className="text-zinc-400 mt-1 text-sm">
+              <h1 className="text-2xl sm:text-3xl font-black tracking-tight">⚽ Álbum 2026</h1>
+              <p className={`mt-1 text-sm font-medium ${subTextColor}`}>
                 {ownedCount} / {stickers.length} {' • '} {percent}% {' • '} 🔁 {totalDuplicates}
               </p>
             </div>
 
             <button
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-              className={`px-4 py-2 rounded-2xl font-bold transition-all ${
-                theme === 'dark' ? 'bg-zinc-800' : 'bg-white border border-zinc-300'
-              }`}
+              className={`p-3 sm:px-5 sm:py-2.5 rounded-2xl font-bold transition-all flex items-center justify-center gap-2 ${theme === 'dark'
+                  ? 'bg-zinc-800 hover:bg-zinc-700 text-white'
+                  : 'bg-white border border-zinc-200 hover:bg-zinc-100 text-zinc-900 shadow-sm'
+                }`}
             >
               {theme === 'dark' ? '☀️ Claro' : '🌙 Escuro'}
             </button>
           </div>
 
-          <div className="w-full h-3 bg-zinc-800 rounded-full overflow-hidden mt-4">
+          <div className={`w-full h-2.5 rounded-full overflow-hidden mt-5 ${theme === 'dark' ? 'bg-zinc-800' : 'bg-zinc-200'}`}>
             <div
-              className="h-full bg-green-500 transition-all duration-500"
+              className="h-full bg-green-500 transition-all duration-500 rounded-full"
               style={{ width: `${percent}%` }}
             />
           </div>
 
           <input
             type="text"
-            placeholder="Pesquisar figurinha..."
+            placeholder="Pesquisar figurinha ou país..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className={`w-full mt-4 p-4 rounded-2xl border outline-none ${
-              theme === 'dark' ? 'bg-zinc-900 border-zinc-800' : 'bg-white border-zinc-300'
-            }`}
+            className={`w-full mt-5 p-4 rounded-2xl border outline-none font-medium transition-all ${theme === 'dark'
+                ? 'bg-zinc-900 border-zinc-800 focus:border-zinc-600'
+                : 'bg-white border-zinc-200 focus:border-zinc-400 shadow-sm'
+              }`}
           />
 
-          <div className="flex gap-2 mt-4 overflow-x-auto pb-1">
+          <div className="flex gap-2 mt-5 overflow-x-auto pb-2 scrollbar-hide">
             <button
               onClick={() => copyMissing(stickers)}
-              className="px-4 py-2 rounded-2xl bg-blue-500 font-bold whitespace-nowrap"
+              className="px-5 py-2.5 rounded-2xl bg-blue-500 hover:bg-blue-600 text-white font-bold whitespace-nowrap shadow-sm shadow-blue-500/20 transition-colors"
             >
-              📋 Faltantes
+              📋 Copiar Faltantes
             </button>
 
             <button
               onClick={() => copyDuplicates(stickers)}
-              className="px-4 py-2 rounded-2xl bg-yellow-500 text-black font-bold whitespace-nowrap"
+              className="px-5 py-2.5 rounded-2xl bg-yellow-400 hover:bg-yellow-500 text-zinc-900 font-bold whitespace-nowrap shadow-sm shadow-yellow-500/20 transition-colors"
             >
-              🔁 Repetidas
+              🔁 Copiar Repetidas
             </button>
           </div>
 
-          <div className="flex gap-2 mt-4 overflow-x-auto pb-1">
-            <FilterButton active={filter === 'all'} onClick={() => setFilter('all')}>
+          <div className="flex gap-2 mt-2 overflow-x-auto pb-2 scrollbar-hide">
+            <FilterButton theme={theme} active={filter === 'all'} onClick={() => setFilter('all')}>
               Todas
             </FilterButton>
-            <FilterButton active={filter === 'owned'} onClick={() => setFilter('owned')}>
+            <FilterButton theme={theme} active={filter === 'owned'} onClick={() => setFilter('owned')}>
               Tenho
             </FilterButton>
-            <FilterButton active={filter === 'missing'} onClick={() => setFilter('missing')}>
+            <FilterButton theme={theme} active={filter === 'missing'} onClick={() => setFilter('missing')}>
               Faltam
             </FilterButton>
-            <FilterButton active={filter === 'duplicates'} onClick={() => setFilter('duplicates')}>
+            <FilterButton theme={theme} active={filter === 'duplicates'} onClick={() => setFilter('duplicates')}>
               Repetidas
             </FilterButton>
           </div>
         </div>
       </header>
 
-      <div className="max-w-7xl mx-auto p-3">
+      <div className="max-w-7xl mx-auto p-4 sm:p-6">
         {Object.entries(grouped).map(([country, list]) => {
           if (list.length === 0) return null
 
@@ -255,77 +240,73 @@ export default function Home() {
           const percentCountry = ((ownedCountry / list.length) * 100).toFixed(0)
 
           return (
-            <section key={country} className="mb-10">
+            <section key={country} className="mb-12">
               <div
-                className={`sticky top-[220px] z-40 backdrop-blur py-3 mb-4 border-b ${
-                  theme === 'dark' ? 'bg-zinc-950/95 border-zinc-800' : 'bg-white/95 border-zinc-300'
-                }`}
+                className={`sticky top-[260px] sm:top-[280px] z-40 backdrop-blur-md py-3 mb-5 border-b ${theme === 'dark' ? 'bg-zinc-950/90 border-zinc-800' : 'bg-zinc-50/90 border-zinc-200'
+                  }`}
               >
-                <div className="flex items-center justify-between">
-                  <div>
-                    <h2 className="text-xl sm:text-2xl font-black">{country}</h2>
-                    <p className="text-zinc-400 text-sm">
-                      {ownedCountry}/{list.length} {' • '} {percentCountry}%
-                    </p>
-                  </div>
+                <div className="flex items-end justify-between">
+                  <h2 className="text-xl sm:text-2xl font-black tracking-tight">{country}</h2>
+                  <p className={`text-sm font-bold ${subTextColor}`}>
+                    {ownedCountry}/{list.length} {' • '} {percentCountry}%
+                  </p>
                 </div>
               </div>
 
-              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 2xl:grid-cols-8 gap-3">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 2xl:grid-cols-8 gap-3 sm:gap-4">
                 {list.map((sticker) => (
                   <div
                     key={sticker.id}
-                    className={`rounded-2xl p-3 border transition-all duration-200 ${
-                      sticker.owned
-                        ? 'bg-green-500/20 border-green-500 shadow-lg shadow-green-500/20'
+                    className={`rounded-2xl p-4 border transition-all duration-200 flex flex-col ${sticker.owned
+                        ? 'bg-green-500/10 border-green-500 shadow-md shadow-green-500/10'
                         : theme === 'dark'
-                        ? 'bg-zinc-900 border-zinc-800'
-                        : 'bg-white border-zinc-300'
-                    }`}
+                          ? 'bg-zinc-900 border-zinc-800 hover:border-zinc-700'
+                          : 'bg-white border-zinc-200 shadow-sm hover:border-zinc-300'
+                      }`}
                   >
-                    <div className="flex items-start justify-between">
+                    <div className="flex items-start justify-between mb-2">
                       <div>
-                        <p className="text-lg sm:text-xl font-black">{sticker.code}</p>
-                        <p className="text-zinc-400 text-xs">{sticker.category}</p>
+                        <p className="text-xl font-black">{sticker.code}</p>
+                        <p className={`text-xs font-semibold ${subTextColor}`}>{sticker.category}</p>
                       </div>
 
                       {sticker.owned && (
-                        <div className="text-green-400 text-xl font-black">✓</div>
+                        <div className="text-green-500 text-xl font-black">✓</div>
                       )}
                     </div>
 
                     <button
                       onClick={() => toggleOwned(sticker)}
-                      className={`mt-3 w-full py-2 rounded-xl font-bold transition-all text-sm ${
-                        sticker.owned
-                          ? 'bg-green-500 text-black'
+                      className={`mt-auto w-full py-2.5 rounded-xl font-bold transition-all text-sm ${sticker.owned
+                          ? 'bg-green-500 text-white shadow-sm shadow-green-500/20'
                           : theme === 'dark'
-                          ? 'bg-zinc-800 hover:bg-zinc-700'
-                          : 'bg-zinc-200 hover:bg-zinc-300'
-                      }`}
+                            ? 'bg-zinc-800 hover:bg-zinc-700 text-white'
+                            : 'bg-zinc-100 hover:bg-zinc-200 text-zinc-900'
+                        }`}
                     >
                       {sticker.owned ? 'Tenho' : 'Marcar'}
                     </button>
 
-                    <div className="mt-3">
-                      <p className="text-xs text-zinc-400 mb-2 text-center">Repetidas</p>
+                    <div className="mt-4 pt-3 border-t border-dashed border-zinc-500/30">
+                      <p className={`text-[11px] uppercase font-bold text-center mb-2 tracking-wider ${subTextColor}`}>
+                        Repetidas
+                      </p>
                       <div className="flex items-center justify-between gap-2">
                         <button
                           onClick={() => changeDuplicates(sticker, -1)}
-                          className="flex-1 h-9 rounded-xl bg-red-500 font-black text-lg"
+                          className="flex-1 h-9 rounded-xl bg-red-500/10 hover:bg-red-500/20 text-red-500 font-black text-lg transition-colors flex items-center justify-center"
                         >
                           -
                         </button>
                         <div
-                          className={`w-10 h-9 rounded-xl flex items-center justify-center font-black ${
-                            theme === 'dark' ? 'bg-zinc-800' : 'bg-zinc-200'
-                          }`}
+                          className={`w-10 h-9 rounded-xl flex items-center justify-center font-black text-sm ${theme === 'dark' ? 'bg-zinc-800 text-white' : 'bg-zinc-100 text-zinc-900'
+                            }`}
                         >
                           {sticker.duplicates}
                         </div>
                         <button
                           onClick={() => changeDuplicates(sticker, 1)}
-                          className="flex-1 h-9 rounded-xl bg-green-500 text-black font-black text-lg"
+                          className="flex-1 h-9 rounded-xl bg-green-500/10 hover:bg-green-500/20 text-green-600 dark:text-green-400 font-black text-lg transition-colors flex items-center justify-center"
                         >
                           +
                         </button>
@@ -346,6 +327,7 @@ type FilterProps = {
   children: React.ReactNode
   active: boolean
   onClick: () => void
+  theme: string
 }
 
 function copyMissing(stickers: Sticker[]) {
@@ -376,13 +358,16 @@ function copyDuplicates(stickers: Sticker[]) {
   alert('Repetidas copiadas!')
 }
 
-function FilterButton({ children, active, onClick }: FilterProps) {
+function FilterButton({ children, active, onClick, theme }: FilterProps) {
   return (
     <button
       onClick={onClick}
-      className={`px-4 py-2 rounded-2xl whitespace-nowrap font-bold transition-all ${
-        active ? 'bg-green-500 text-black' : 'bg-zinc-800 hover:bg-zinc-700'
-      }`}
+      className={`px-5 py-2.5 rounded-2xl whitespace-nowrap font-bold transition-all text-sm ${active
+          ? 'bg-zinc-900 text-white dark:bg-white dark:text-black shadow-md'
+          : theme === 'dark'
+            ? 'bg-zinc-800 hover:bg-zinc-700 text-zinc-300'
+            : 'bg-white border border-zinc-200 hover:bg-zinc-100 text-zinc-600 shadow-sm'
+        }`}
     >
       {children}
     </button>
